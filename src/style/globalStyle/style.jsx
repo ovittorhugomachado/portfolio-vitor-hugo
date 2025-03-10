@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { MediaSizes } from '../mediaSizes';
 
 export const Style = createGlobalStyle`
     * {
@@ -42,26 +43,55 @@ export const Style = createGlobalStyle`
     }
 
     h4 {
+        width: 171px;
         font-size: 20px;
         color: var(--text);
         margin-left: 10px;
-            @media (min-width: 400px) {
+            @media (min-width: ${MediaSizes.mobileLarge}) {
                 font-size: 25px;
-                    &.name {
-                        display: none;
+            }
+            @media (min-width: ${MediaSizes.desktop}) {
+                display: none;
+                    &.menu-open {
+                        display: block;
                     }
             }
     }
 
+    h5 {
+        font-size: 23px;
+        font-weight: 100;
+        color: var(--text);
+        transition: 0.3s ease-in-out;
+            &:hover {
+                color: var(--secondary-color);
+            }
+    }
+
+    P {
+        font-size: 11px;
+        color: var(--text);
+        font-weight: 200
+    }
+
+    a {
+        text-decoration: none;
+            &:hover {
+                color: var(--secondary-color);
+            }
+    }
+
     svg {
-        &.svg-inline--fa {
-            width: 25px;
-            height: 25px;
-            color: var(--text)
-        }
+        width: 30px;
+        height: 30px;
+        color: var(--text);
+        transition: 0.3s ease-in-out;
+            &.nav-icon {
+                width: 25px;
+                height: 25px;
+            }
+            &:hover {
+                color: var(--secondary-color)
+            }
     }
 `;
-
-export const GlobalStyle = () => {
-    return <Style />;
-};
