@@ -1,9 +1,10 @@
 import { Style } from "./style";
-import { useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
+import { useContext } from "react";
+
 
 export const GlobalStyle = () => {
-    const { themes } = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
-    return <Style theme={themes} />
+    return <Style theme={theme} />
 }

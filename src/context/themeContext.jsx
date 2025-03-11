@@ -1,8 +1,8 @@
 import { createContext, useState } from 'react';
-import { ThemeProvider as StyledThemeProvider } from 'styled-components'; // Importe o ThemeProvider do styled-components
 
 export const themes = {
     light: {
+        name: 'light',
         background: 'linear-gradient(to bottom right, #D9D9D9, #9f9f9f, #797979, #3A3A3A)',
         primaryColor: '#FFFFFF',
         secondaryColor: '#12CEB0',
@@ -10,6 +10,7 @@ export const themes = {
         colorActive: '#737373',
     },
     dark: {
+        name: 'dark',
         background: '#242424',
         primaryColor: '#181818',
         secondaryColor: '#12CEB0',
@@ -21,7 +22,7 @@ export const themes = {
 export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
-    const [theme, setTheme] = useState(themes.dark);
+    const [theme, setTheme] = useState(themes.light);
 
     const changeTheme = () => {
         setTheme(theme === themes.dark ? themes.light : themes.dark);
@@ -29,9 +30,7 @@ export const ThemeProvider = (props) => {
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme, changeTheme }}>
-            <StyledThemeProvider theme={theme}> {/* Passe o tema atual para o ThemeProvider do styled-components */}
-                {props.children}
-            </StyledThemeProvider>
+            {props.children}
         </ThemeContext.Provider>
     );
 };

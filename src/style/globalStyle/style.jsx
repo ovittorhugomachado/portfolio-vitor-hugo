@@ -8,7 +8,7 @@ export const Style = createGlobalStyle`
         box-sizing: border-box;
         font-family: geologica, sans-serif;
         letter-spacing: 1px;
-        transition: background-color 0.3s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+        transition: background-color 0.4s ease-in-out, border-color 0.5s ease, box-shadow 0.5s ease;
         --background: ${({ theme }) => theme.background};
         --primary-color: ${({ theme }) => theme.primaryColor};
         --secondary-color: ${({ theme }) => theme.secondaryColor};
@@ -85,13 +85,40 @@ export const Style = createGlobalStyle`
         width: 30px;
         height: 30px;
         color: var(--text);
-        transition: 0.3s ease-in-out;
+        transition: 0.4s ease-in-out;
+            &.menu-arrow {
+                position: absolute;
+                right: -25px;
+                top: 50%;
+                transform: translateY(-185%);
+                cursor: pointer;
+                    &.menu-open {
+                        transform: translate(-25px, -185%) rotate(180deg);
+                    }
+                    &:hover {
+                        color: var(--secondary-color)
+                    }
+            }
             &.nav-icon {
                 width: 25px;
                 height: 25px;
+                    @media (min-width: ${MediaSizes.desktop}) {
+                        &:hover {
+                            color: var(--secondary-color)
+                        }
+                    }
             }
-            &:hover {
-                color: var(--secondary-color)
+            &.theme-icon {
+                width: 25px;
+                height: 25px;
+                color: var(--text);
+                z-index: 10;
+                    &.sun {
+                        color: white;
+                    }
+                    &.moon {
+                        color: black;
+                    }
             }
     }
 `;
