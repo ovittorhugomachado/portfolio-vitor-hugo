@@ -47,6 +47,7 @@ export const Style = createGlobalStyle`
         font-size: 20px;
         color: var(--text);
         margin-left: 10px;
+        text-align: start;
             @media (min-width: ${MediaSizes.mobileLarge}) {
                 font-size: 25px;
             }
@@ -60,7 +61,7 @@ export const Style = createGlobalStyle`
 
     h5 {
         font-size: 23px;
-        font-weight: 100;
+        font-weight: 300;
         color: var(--text);
         transition: 0.3s ease-in-out;
             &:hover {
@@ -71,7 +72,7 @@ export const Style = createGlobalStyle`
     P {
         font-size: 11px;
         color: var(--text);
-        font-weight: 200
+        font-weight: 500
     }
 
     a {

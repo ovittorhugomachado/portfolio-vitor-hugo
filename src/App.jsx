@@ -9,7 +9,6 @@ function App() {
         <ThemeProvider>
             <GlobalStyle />
             <Header />
-            <ToggleThemeButton />
             <Nav deviceType={'mobile'}/> {/*SÓ RENDERIZA EM NO MÁXIMO 1020px */}
         </ThemeProvider>
     );

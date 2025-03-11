@@ -11,6 +11,7 @@ export const Container = styled.div`
             justify-content: end;
             margin-bottom: 0;   
             height: 100px;
+            position: static;
                 &.menu-open {
                     flex-direction: row;
                 } 

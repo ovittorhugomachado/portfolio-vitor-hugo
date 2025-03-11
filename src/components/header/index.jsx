@@ -1,28 +1,38 @@
 import { Container, ContainerLogo, Logo } from "./style";
-import { SocialMedia } from "../socialMedia";
 import { useState } from "react";
-import { Nav } from "../nav";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { ToggleThemeButton } from "../toggleThemeButton.jsx";
+import { Nav } from "../nav";
+import { SocialMedia } from "../socialMedia";
 
 const Header = () => {
-
     const [menuOpen, setMenuOpen] = useState(false)
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen)
+        setMenuOpen((prev) => !prev)
     }
+
+    const menuClass = menuOpen ? 'menu-open' : '';
+
     return (
         <Container className={menuOpen ? 'menu-active' : ''}>
-
             <ContainerLogo>
                 <Logo src="/logo.png" alt="logo" />
-                <h4 className={`name ${menuOpen ? "menu-open" : ""}`}>VITOR HUGO</h4>
+                <h4 className={`name ${menuClass}`}>VITOR HUGO</h4>
+                <ToggleThemeButton deviceType='desktop' />
             </ContainerLogo>
-            <Nav className={menuOpen ? 'menu-active' : ''} deviceType={'desktop'} menuOpen={menuOpen} />
+            <Nav
+                className={menuClass}
+                deviceType={'desktop'}
+                menuOpen={menuOpen}
+            />
             <SocialMedia menuOpen={menuOpen} />
-            <IoIosArrowForward className={`menu-arrow ${menuOpen ? "menu-open" : ""}`} onClick={toggleMenu} />
-            
+            <IoIosArrowForward
+                className={`menu-arrow ${menuClass}`}
+                onClick={toggleMenu}
+                aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+                aria-expanded={menuOpen}
+            />
         </Container>
     )
 }

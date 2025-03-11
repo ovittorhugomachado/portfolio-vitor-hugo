@@ -9,6 +9,9 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
     transition: width 0.3s ease;
+        &.desktop {
+            display: none;
+        }
         @media (min-width: ${MediaSizes.mobileLarge}) {
             padding-right: 30px;
         }
@@ -27,10 +30,10 @@ export const Container = styled.header`
 
 export const ContainerLogo = styled.div`
     display: flex;
-    align-items: center
+    align-items: center;
+    position: relative;
 `
 
 export const Logo = styled.img`
     width: 40px;
 `
-

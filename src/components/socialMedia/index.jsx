@@ -1,3 +1,4 @@
+import { ToggleThemeButton } from "../toggleThemeButton.jsx";
 import { Container, Item } from "./style";
 import { FaLinkedin, FaGithub  } from "react-icons/fa";
 
@@ -18,6 +19,7 @@ function SocialMedia({ menuOpen }) {
             >
                 <FaLinkedin />
             </Item>
+            <ToggleThemeButton />
         </Container>
     )
 }
