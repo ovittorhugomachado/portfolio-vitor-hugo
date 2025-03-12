@@ -9,6 +9,7 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
     transition: width 0.3s ease;
+    position: absolute;
         &.desktop {
             display: none;
         }

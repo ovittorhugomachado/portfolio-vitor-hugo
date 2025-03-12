@@ -40,7 +40,6 @@ export const List = styled.ul`
 `
 
 export const Item = styled.li`
-    width: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -20,7 +20,7 @@ const Nav = ({ deviceType, menuOpen }) => {
                     <Item key={index}>
                         <a href="#" aria-label={item.text}> 
                             {(deviceType === 'mobile' || !menuOpen) && (
-                                <item.icon className="icon" />
+                                <item.icon className="nav-icon" />
                             )}
                             {(deviceType === 'mobile' || menuOpen) && (
                                 menuOpen ? <h5>{item.text}</h5> : <p>{item.text}</p>

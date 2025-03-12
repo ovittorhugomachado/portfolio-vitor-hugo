@@ -8,6 +8,9 @@ export const Style = createGlobalStyle`
         box-sizing: border-box;
         font-family: geologica, sans-serif;
         letter-spacing: 1px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        white-space: normal; 
         transition: background-color 0.4s ease-in-out, border-color 0.5s ease, box-shadow 0.5s ease;
         --background: ${({ theme }) => theme.background};
         --primary-color: ${({ theme }) => theme.primaryColor};
@@ -42,6 +45,51 @@ export const Style = createGlobalStyle`
         background: var(--background); /* Corrigido para usar --background */
     }
 
+    main {
+        &.home {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding:  0 30px;
+                @media (min-width: ${MediaSizes.tablet}) {
+                    flex-direction: row;
+                    padding-left: 60px;
+                }
+        }
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: start;
+        color: var(--text);
+        border-bottom: 3px solid var(--secondary-color);
+            @media (min-width: ${MediaSizes.tablet}) {
+                font-size: 43px;
+            }
+    }
+    
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        color: var(--text);
+        text-align: start;
+            @media (min-width: ${MediaSizes.tablet}) {
+                font-size: 33px;
+            }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 200;
+        color: var(--text);
+        text-align: start;
+            @media (min-width: ${MediaSizes.tablet}) {
+                font-size: 26px;
+            }
+    }
+
     h4 {
         width: 171px;
         font-size: 20px;
@@ -72,7 +120,12 @@ export const Style = createGlobalStyle`
     P {
         font-size: 11px;
         color: var(--text);
-        font-weight: 500
+        font-weight: 500;
+            &.large {
+                font-size: 16px;
+                font-weight: 100;
+                text-align: start;
+            }
     }
 
     a {
