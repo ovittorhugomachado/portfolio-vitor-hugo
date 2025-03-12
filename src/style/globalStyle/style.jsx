@@ -88,18 +88,24 @@ export const Style = createGlobalStyle`
         color: var(--text);
         transition: 0.4s ease-in-out;
             &.menu-arrow {
-                position: absolute;
-                right: -25px;
-                top: 50%;
-                transform: translateY(-185%);
-                cursor: pointer;
-                    &.menu-open {
-                        transform: translate(-25px, -185%) rotate(180deg);
-                    }
-                    &:hover {
-                        color: var(--secondary-color)
+                display: none;
+                    @media (min-width: ${MediaSizes.desktop}) {
+                        display: block;
+                        position: absolute;
+                        right: -25px;
+                        top: 50%;
+                        transform: translateY(-185%);
+                        cursor: pointer;
+                            &.menu-open {
+                                transform: translate(-25px, -185%) rotate(180deg);
+                            }
+                            &:hover {
+                                color: var(--secondary-color)
+                            }
+                                            
                     }
             }
+
             &.nav-icon {
                 width: 25px;
                 height: 25px;
@@ -109,6 +115,7 @@ export const Style = createGlobalStyle`
                         }
                     }
             }
+
             &.theme-icon {
                 width: 25px;
                 height: 25px;
