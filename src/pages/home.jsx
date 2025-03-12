@@ -1,12 +1,7 @@
-import { Header } from "../components/header"
-import { Nav } from "../components/nav"
 import { ProfilePicture } from "../components/profilePicture"
 
 const Home = () => {
     return (
-        <>
-            <Header />
-
             <main className="home">
                 <div>
                     <h1>VITOR HUGO</h1>
@@ -16,9 +11,6 @@ const Home = () => {
                 </div>
                 <ProfilePicture />
             </main>
-            <Nav deviceType={'mobile'} /> {/*SÓ RENDERIZA EM NO MÁXIMO 1020px */}
-
-        </>
     )
 }
 

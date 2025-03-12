@@ -10,6 +10,8 @@ function App() {
     return (
         <ThemeProvider>
             <GlobalStyle />
+            <Header />
+            <Nav deviceType={'mobile'} />
             <AppRoutes />
         </ThemeProvider>
     );
