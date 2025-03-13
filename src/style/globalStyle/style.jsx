@@ -58,6 +58,9 @@ export const Style = createGlobalStyle`
                         padding-left: 70px;
                     }
             }
+            &.projects {
+                flex-direction: column;
+            }
 
     }
 

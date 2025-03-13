@@ -14,12 +14,6 @@ const Nav = ({ deviceType, menuOpen }) => {
         { icon: BsTelephone, text: "CONTATO", page: "/contact" },
     ];
 
-    const goToPage = (page) => {
-        Navigate(page);
-    }
-
-
-
     return (
         <Container className={deviceType}>
             <List className={deviceType}>
