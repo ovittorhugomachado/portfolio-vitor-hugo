@@ -28,7 +28,7 @@ export const Style = createGlobalStyle`
         width: 100%;
         min-height: 100vh; 
         margin: 0 auto;
-        background: var(--background); /* Corrigido para usar --background */
+        background: var(--background); 
         overflow-y: auto; 
     }
 
@@ -42,15 +42,18 @@ export const Style = createGlobalStyle`
         align-items: center;
         margin: 0 auto;
         text-align: center;
-        background: var(--background); /* Corrigido para usar --background */
+        background: var(--background);
+            @media (min-width: ${MediaSizes.desktop}) {
+                flex-direction: row;
+            }
     }
 
     main {
-        min-height: 100vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding:  0 30px;
+        padding: 35px 20px 100px;
             &.home {
                 flex-direction: column-reverse;
                     @media (min-width: ${MediaSizes.tablet}) {
@@ -105,6 +108,7 @@ export const Style = createGlobalStyle`
             }
             @media (min-width: ${MediaSizes.desktop}) {
                 display: none;
+                transition: 0.6s ease-in-out;
                     &.menu-open {
                         display: block;
                     }
@@ -125,19 +129,23 @@ export const Style = createGlobalStyle`
 
     h6 {
         color: var(--text);
-        font-weight: 200;
-        font-size: 15px;
+        font-weight: 800;
+        font-size: 23px;
         margin-top: 10px;
+            &.technologie {
+                background-color: red
+            }
     }
 
     P {
-        font-size: 11px;
         color: var(--text);
-        font-weight: 500;
-            &.large {
-                font-size: 16px;
-                font-weight: 100;
-                text-align: start;
+        padding: 20px 0;
+        font-weight: 100;
+            &.nav {
+                font-size: 11px;
+                color: var(--text);
+                font-weight: 500;
+                padding: 0;
             }
     }
 
@@ -199,6 +207,10 @@ export const Style = createGlobalStyle`
                     &.moon {
                         color: black;
                     }
+            }
+            &.link {
+                color: var(--primary-color);
+                width: 23px;
             }
     }
 `;

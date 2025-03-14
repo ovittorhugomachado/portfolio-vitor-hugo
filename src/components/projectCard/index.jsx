@@ -1,13 +1,25 @@
-import { Container } from "./style"
+import { Container, Image, ContainerInfo, Technologie, ContainerTechnologies, ContainerLinks, Link } from "./style"
+import { FaGithub } from "react-icons/fa";
+import { TfiWorld } from "react-icons/tfi";
 
-const ProjectCard = ({image, title, text, technologies}) => {
+const ProjectCard = ({ image, title, text, technologies, linkCode, linkPage }) => {
 
     return (
         <Container>
-            <img width={200} src={image} alt={title} />
-            <h6>{title}</h6>
-            <p>{text}</p>
-            <h6>{technologies}</h6>
+            <Image src={image} alt={title} />
+            <ContainerInfo>
+                <h6>{title}</h6>
+                <p>{text}</p>
+                <ContainerTechnologies>
+                    {technologies.map((technologie, index) => (
+                        <Technologie href="#" key={index} className="technologie">{technologie}</Technologie>
+                    ))} {/* falta colocar o link */}
+                </ContainerTechnologies>
+                <ContainerLinks>
+                    <Link href={linkCode} target="_blank"><FaGithub className="link" />Código</Link>
+                    <Link href={linkPage} target="_blank"><TfiWorld className="link" />Página</Link>
+                </ContainerLinks>
+            </ContainerInfo>
         </Container>
     )
 }

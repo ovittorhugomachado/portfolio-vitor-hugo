@@ -3,7 +3,6 @@ import { HiOutlineHome } from "react-icons/hi2";
 import { GoPerson } from "react-icons/go";
 import { IoDocumentOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
-import { Navigate, useNavigate } from "react-router-dom";
 
 const Nav = ({ deviceType, menuOpen }) => {
 
@@ -24,7 +23,7 @@ const Nav = ({ deviceType, menuOpen }) => {
                                 <item.icon className="nav-icon" />
                             )}
                             {(deviceType === 'mobile' || menuOpen) && (
-                                menuOpen ? <h5>{item.text}</h5> : <p>{item.text}</p>
+                                menuOpen ? <h5>{item.text}</h5> : <p className="nav">{item.text}</p>
                             )}
                         </a>
                     </Item>

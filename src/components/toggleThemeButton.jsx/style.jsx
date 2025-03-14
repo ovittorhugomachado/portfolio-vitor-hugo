@@ -8,7 +8,7 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    border: 3px solid var(--primary-color);
+    border: 2px solid var(--background);
     background-color: var(--primary-color);
     position: absolute;
     top: 50px;
@@ -33,23 +33,25 @@ export const Container = styled.div`
 `
 
 export const Button = styled.button`
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    height: 90%;
     border-radius: 50%;
     border: none;
     background-color: var(--secondary-color);
     position: absolute;
     left: 0;
     transition: 0.3s;
+    transform: translateX(2px);
         &.dark {
-            transform: translateX(28px);
+            transform: translateX(31px);
         }
         @media (min-width: ${MediaSizes.desktop}) {
-            width: 100%;
-            height: 47%;
+            width: 90%;
+            height: 43%;
             top: 0;
+            transform: translate(2px, 2px);
                 &.dark {
-                transform: translate(0, 30px);
+                transform: translate(2px, 32px);
                 }
         }
 

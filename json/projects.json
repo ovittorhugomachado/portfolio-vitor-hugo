@@ -1,44 +1,70 @@
+[
     {
-        "projects": [
-            {
-                "name": "User Git",
-                "image": "/projects/gitHubApi.png",
-                "description": "Página que busca dados de usuários da plataforma GitHub, como número de seguidores e eventos. Os dados são retornados através do uso da API do GitHub",
-                "linkGitHub": "https://github.com/ovittorhugomachado/fetch-github-api.git",
-                "linkPage": "https://fetch-github-api-b5ib.onrender.com/",
-                "technologies": ["HTML", "CSS", "JavaScript", "ReactJS", "API"]
-            },
-            {
-                "name": "Formulário multietapas",
-                "image": "/projects/multistepForm.png",
-                "description": "Essa página é a resolução de um desfio da plataforma FrontEnd Mentor onde o objetivo foi criar um formulário de quatro etapas usando ReactJS, em que as informações digitadas são formatadas no formato desejado através de máscaras e após isso são validadas",
-                "linkGitHub": "https://github.com/ovittorhugomachado/formulario-multietapas",
-                "linkPage": "https://formulariomultietapas.onrender.com/",
-                "technologies": ["HTML", "CSS", "JavaScript", "ReactJS"]
-            },
-            {
-                "name": "Portfólio Vitor Hugo",
-                "image": "/projects/gitHubApi.png",
-                "description": "Página onde ficam exibidos alguns projetos que já realizei e também informações de contato",
-                "linkGitHub": "https://github.com/ovittorhugomachado/portfolio-vitor-hugo/tree/main",
-                "linkPage": "https://portfolio-vitor-hugo.onrender.com/",
-                "technologies": ["HTML", "CSS", "JavaScript", "ReactJS"]
-            },
-            {
-                "name": "PokeDex",
-                "image": "/projects/pokeDex.png",
-                "description": "Projeto onde são listados todos os pokemons, assim como o tipo, habilidade e movimentos de cada um deles, os dados são consumidos através da API do PokéApi",
-                "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
-                "linkPage": "",
-                "technologies": ["HTML", "CSS", "JavaScript", "ReactJS", "API"]
-            },
-            {
-                "name": "Wiki Movie",
-                "image": "/projects/wikiMovie.png",
-                "description": "Página que conta com informações sobre filmes, filtros por gênero e busca por nome. As informaçãoes são buscadas da API TDBM (The Data Base Movie)",
-                "linkGitHub": "https://github.com/ovittorhugomachado/wikimovie/tree/main",
-                "linkPage": "https://wikimovie.onrender.com/",
-                "technologies": ["HTML", "CSS", "JavaScript", "ReactJS", "API"]
-            }
+        "name": "User Git",
+        "image": "/projects/gitHubApi.png",
+        "description": "Página que busca dados de usuários da plataforma GitHub, como número de seguidores e eventos. Os dados são retornados através do uso da API do GitHub",
+        "linkGitHub": "https://github.com/ovittorhugomachado/fetch-github-api.git",
+        "linkPage": "https://fetch-github-api-b5ib.onrender.com/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS",
+            "API"
+        ]
+    },
+    {
+        "name": "Formulário multietapas",
+        "image": "/projects/multistepForm.png",
+        "description": "Essa página é a resolução de um desfio da plataforma FrontEnd Mentor onde o objetivo foi criar um formulário de quatro etapas usando ReactJS, em que as informações digitadas são formatadas no formato desejado através de máscaras e após isso são validadas",
+        "linkGitHub": "https://github.com/ovittorhugomachado/formulario-multietapas",
+        "linkPage": "https://formulariomultietapas.onrender.com/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS"
+        ]
+    },
+    {
+        "name": "Portfólio Vitor Hugo",
+        "image": "/projects/gitHubApi.png",
+        "description": "Página onde ficam exibidos alguns projetos que já realizei e também informações de contato",
+        "linkGitHub": "https://github.com/ovittorhugomachado/portfolio-vitor-hugo/tree/main",
+        "linkPage": "https://portfolio-vitor-hugo.onrender.com/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS"
+        ]
+    },
+    {
+        "name": "PokeDex",
+        "image": "/projects/pokeDex.png",
+        "description": "Projeto onde são listados todos os pokemons, assim como o tipo, habilidade e movimentos de cada um deles, os dados são consumidos através da API do PokéApi",
+        "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
+        "linkPage": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS",
+            "API"
+        ]
+    },
+    {
+        "name": "Wiki Movie",
+        "image": "/projects/wikiMovie.png",
+        "description": "Página que conta com informações sobre filmes, filtros por gênero e busca por nome. As informaçãoes são buscadas da API TDBM (The Data Base Movie)",
+        "linkGitHub": "https://github.com/ovittorhugomachado/wikimovie/tree/main",
+        "linkPage": "https://wikimovie.onrender.com/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS",
+            "API"
         ]
     }
+]

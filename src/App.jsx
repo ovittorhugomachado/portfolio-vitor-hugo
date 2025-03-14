@@ -11,8 +11,8 @@ function App() {
         <ThemeProvider>
             <GlobalStyle />
             <Header />
-            <Nav deviceType={'mobile'} />
             <AppRoutes />
+            <Nav deviceType={'mobile'} />
         </ThemeProvider>
     );
 }

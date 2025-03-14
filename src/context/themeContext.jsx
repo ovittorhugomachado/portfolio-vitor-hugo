@@ -3,7 +3,7 @@ import { createContext, useState } from 'react';
 export const themes = {
     light: {
         name: 'light',
-        background: 'linear-gradient(to bottom right, #D9D9D9, #9f9f9f, #797979, #3A3A3A)',
+        background: '#D9D9D9',
         primaryColor: '#FFFFFF',
         secondaryColor: '#12CEB0',
         text: '#181818',
