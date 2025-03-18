@@ -61,6 +61,7 @@ export const Style = createGlobalStyle`
                 padding-top: 50px;
             }
             &.home {
+                justify-content: center;
                 flex-direction: column-reverse;
                     @media (min-width: ${MediaSizes.tablet}) {
                         flex-direction: row;
