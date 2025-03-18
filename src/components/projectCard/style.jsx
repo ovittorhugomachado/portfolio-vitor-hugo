@@ -60,6 +60,7 @@ export const ContainerLinks = styled.div`
 export const Link = styled.a`
     font-size: 14px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 5px 10px;
     border-radius: 25px;
