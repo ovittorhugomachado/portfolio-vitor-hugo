@@ -51,7 +51,7 @@ export const Style = createGlobalStyle`
     main {
         width: 100%;
         max-width: 1100px;
-        min-height: 520px;
+        min-height: 515px;
         display: flex;
         flex-direction: column;
         justify-content: start;
