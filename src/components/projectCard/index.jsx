@@ -8,7 +8,7 @@ const ProjectCard = ({ image, title, text, technologies, linkCode, linkPage }) =
         <Container>
             <Image src={image} alt={title} />
             <ContainerInfo>
-                <h6>{title}</h6>
+                <h3>{title}</h3>
                 <p>{text}</p>
                 <ContainerTechnologies>
                     {technologies.map((technologie, index) => (

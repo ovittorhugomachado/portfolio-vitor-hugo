@@ -20,7 +20,7 @@ const Header = () => {
                 <ContainerLogo>
                     <Logo src="/logo.png" alt="logo" />
                     <h4 className={`name ${menuClass}`}>VITOR HUGO</h4>
-                    <ToggleThemeButton deviceType='desktop' />
+                    <ToggleThemeButton className='nav-icon' deviceType='desktop' />
                 </ContainerLogo>
                 <Nav
                     className={menuClass}

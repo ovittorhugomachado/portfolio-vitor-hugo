@@ -17,6 +17,7 @@ export const Container = styled.div`
 
 export const Image = styled.img`
     height: 110px;
+    margin-bottom: 15px;
         @media(min-width: ${MediaSizes.mobileLarge}) {
             height: 160px;
         }
@@ -29,6 +30,7 @@ export const ContainerInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 `
 
 export const ContainerTechnologies = styled.div`
@@ -38,22 +40,16 @@ export const ContainerTechnologies = styled.div`
     gap: 10px;
 `
 
-export const Technologie = styled.a`
+export const Technologie = styled.h6`
     color: var(--text);
     font-weight: 700;
     padding: 5px 10px;
     border-radius: 7px;
-    border: 2px solid var(--secondary-color);
-    cursor: pointer;
-        &:hover {
-            background-color: var(--secondary-color);
-            color: var(--text);
-        }
+    flex: 1;
 `  
 
 export const ContainerLinks = styled.div`
     display: flex;
-    flex-direction: column;
     margin-top: 20px;
     gap: 10px;
         @media(min-width: ${MediaSizes.mobileLarge}) {

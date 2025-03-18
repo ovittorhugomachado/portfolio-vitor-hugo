@@ -43,4 +43,9 @@ export const Item = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+        &.active {
+            border-radius: 20px;
+            background-color: var(--background);
+            padding: 8px;
+        }
 `

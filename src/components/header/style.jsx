@@ -3,8 +3,11 @@ import { MediaSizes } from "../../style/mediaSizes";
 
 export const Container = styled.div`
     width: 100vw;
-    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
         @media (min-width: ${MediaSizes.desktop}) {
+            position: static;
+            transition: 0.5s ease-in-out;
             width: 70px;
             height: 100vh;
                 &.menu-active {
@@ -20,7 +23,6 @@ export const Menu = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: width 0.3s ease-in-out;
         &.desktop {
             display: none;
         }
@@ -28,6 +30,7 @@ export const Menu = styled.header`
             padding-right: 30px;
         }
         @media (min-width: ${MediaSizes.desktop}) {
+            transition: width 0.3s ease-in-out;
             position: fixed;
             top: 0;
             left: 0;

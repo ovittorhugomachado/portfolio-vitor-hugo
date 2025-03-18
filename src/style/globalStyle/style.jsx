@@ -38,7 +38,7 @@ export const Style = createGlobalStyle`
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         text-align: center;
@@ -50,21 +50,41 @@ export const Style = createGlobalStyle`
 
     main {
         width: 100%;
+        max-width: 1100px;
+        min-height: 100vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: start;
         align-items: center;
-        padding: 35px 20px 100px;
+        padding: 105px 20px 100px;
+            @media (min-width: ${MediaSizes.desktop}) {
+                padding-top: 50px;
+            }
             &.home {
                 flex-direction: column-reverse;
                     @media (min-width: ${MediaSizes.tablet}) {
                         flex-direction: row;
+                        justify-content: center;
                         padding-left: 70px;
                     }
             }
-            &.projects {
-                flex-direction: column;
+            &.contact {
+                justify-content: center;
             }
+    }
 
+    div {
+            &.container-skills {
+                max-width: 1000px;
+                margin-top: 30px;
+            }
+            &.skills {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;   
+                gap: 20px;
+                margin: 20px; 
+            }
     }
 
     h1 {
@@ -116,42 +136,62 @@ export const Style = createGlobalStyle`
     }
 
     h5 {
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 300;
         color: var(--text);
         transition: 0.3s ease-in-out;
         overflow-wrap: normal;
         word-break: normal;
-            &:hover {
-                color: var(--secondary-color);
+        margin-top: 20px;
+            &.nav {
+                margin: 0;
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
+            }
+            &.active {
+                color: var(--color-active)
+            }
+            &.skill {
+                padding: 7px 15px;
+                border-radius: 7px;
+                background-color: var(--primary-color);
+                margin-top: 0;
             }
     }
 
     h6 {
         color: var(--text);
         font-weight: 800;
-        font-size: 23px;
-        margin-top: 10px;
+        font-size: 16px;
+        white-space: nowrap;
             &.technologie {
-                background-color: red
+                background-color: var(--background)
             }
+
     }
 
     P {
         color: var(--text);
-        padding: 20px 0;
+        padding: 7px 0;
         font-weight: 100;
             &.nav {
-                font-size: 11px;
+                font-size: 8px;
                 color: var(--text);
                 font-weight: 500;
                 padding: 0;
+            }
+            &.active {
+                color: var(--color-active)
             }
     }
 
     a {
         cursor: pointer;
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
             &.phone-number {
                 color: var(--text);
                     &:hover {
@@ -164,13 +204,20 @@ export const Style = createGlobalStyle`
     }
 
     svg {
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
         color: var(--text);
         transition: 0.4s ease-in-out;
+            @media (min-width: ${MediaSizes.desktop}) {
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
             &.menu-arrow {
                 display: none;
                     @media (min-width: ${MediaSizes.desktop}) {
+                        width: 30px;
+                        height: 30px;
                         display: block;
                         position: absolute;
                         right: -25px;
@@ -187,13 +234,22 @@ export const Style = createGlobalStyle`
             }
 
             &.nav-icon {
-                width: 25px;
-                height: 25px;
+                width: 18px;
+                height: 18px;
+                    &.active {
+                        color: var(--color-active);
+                    }
                     @media (min-width: ${MediaSizes.desktop}) {
+                        width: 25px;
+                        height: 25px;
                         &:hover {
                             color: var(--secondary-color)
                         }
                     }
+            }
+            &.social-media {
+                width: 30px;
+                height: 30px;
             }
 
             &.theme-icon {
@@ -209,6 +265,8 @@ export const Style = createGlobalStyle`
                     }
             }
             &.link {
+                width: 30px;
+                height: 30px;
                 color: var(--primary-color);
                 width: 23px;
             }

@@ -10,14 +10,14 @@ function SocialMedia({ menuOpen }) {
                 href="https://github.com/vitor-hugo-machado"
                 target='_blank'
             >
-                <FaGithub />
+                <FaGithub className="social-media" />
             </Item>
             <Item
                 className='icon-social-media'
                 href="https://www.linkedin.com/in/vitor-hugo-alves-machado-82b73a320/"
                 target='_blank'
             >
-                <FaLinkedin />
+                <FaLinkedin className="social-media" />
             </Item>
             <ToggleThemeButton />
         </Container>
