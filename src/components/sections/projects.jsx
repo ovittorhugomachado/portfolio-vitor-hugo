@@ -1,5 +1,5 @@
-import { ProjectCard } from "../components/projectCard";
-import projects from "../../json/projects.json"
+import { ProjectCard } from "../projectCard";
+import projects from "../../../json/projects.json"
 
 const Projects = () => {
 

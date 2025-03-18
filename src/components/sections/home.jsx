@@ -1,4 +1,4 @@
-import { ProfilePicture } from "../components/profilePicture"
+import { ProfilePicture } from "../profilePicture"
 
 const Home = () => {
     return (

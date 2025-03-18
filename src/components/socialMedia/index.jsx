@@ -7,14 +7,14 @@ function SocialMedia({ menuOpen }) {
         <Container className={menuOpen ? 'menu-open' : ''}>
             <Item
                 className='icon-social-media'
-                href="https://github.com/vitor-hugo-machado"
+                href="https://github.com/ovittorhugomachado"
                 target='_blank'
             >
                 <FaGithub className="social-media" />
             </Item>
             <Item
                 className='icon-social-media'
-                href="https://www.linkedin.com/in/vitor-hugo-alves-machado-82b73a320/"
+                href="https://www.linkedin.com/in/vitor-hugo-alves-machado-1621bb156/"
                 target='_blank'
             >
                 <FaLinkedin className="social-media" />

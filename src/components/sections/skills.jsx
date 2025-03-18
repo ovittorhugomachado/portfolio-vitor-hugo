@@ -1,5 +1,5 @@
-import { SkillCard } from "../components/skillCard"
-import skillsList from "../../json/hard-skills.json"
+import { SkillCard } from "../skillCard"
+import skillsList from "../../../json/hard-skills.json"
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { PiFigmaLogoLight } from "react-icons/pi";

@@ -1,12 +1,15 @@
 import { Container, Menu, ContainerLogo, Logo } from "./style";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { SectionContext } from "../../context/sectionContext.jsx";
 import { IoIosArrowForward } from "react-icons/io";
 import { ToggleThemeButton } from "../toggleThemeButton.jsx";
 import { Nav } from "../nav";
 import { SocialMedia } from "../socialMedia";
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const {setCurrentSection} = useContext(SectionContext)
 
     const toggleMenu = () => {
         setMenuOpen((prev) => !prev)
@@ -17,7 +20,7 @@ const Header = () => {
     return (
         <Container className={menuOpen ? 'menu-active' : ''}>
             <Menu className={menuOpen ? 'menu-active' : ''}>
-                <ContainerLogo>
+                <ContainerLogo onClick={() => setCurrentSection(0)}>
                     <Logo src="/logo.png" alt="logo" />
                     <h4 className={`name ${menuClass}`}>VITOR HUGO</h4>
                     <ToggleThemeButton className='nav-icon' deviceType='desktop' />
@@ -36,7 +39,6 @@ const Header = () => {
                 />
             </Menu>
         </Container>
-
     )
 }
 

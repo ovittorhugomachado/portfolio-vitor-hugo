@@ -1,16 +1,20 @@
 import { GlobalStyle } from './style/globalStyle';
 import { Header } from './components/header';
 import { ThemeProvider } from './context/themeContext';
+import { SectionProvider } from './context/sectionContext.jsx';
 import { Nav } from './components/nav';
-import { AppRoutes } from './pages/routes.jsx';
+import { Main } from './components/main/index.jsx';
 
 function App() {
+
     return (
         <ThemeProvider>
-            <GlobalStyle />
-            <Header />
-            <AppRoutes />
-            <Nav deviceType={'mobile'} />
+            <SectionProvider>
+                <GlobalStyle />
+                <Header />
+                <Main />
+                <Nav deviceType={'mobile'} />
+            </SectionProvider>
         </ThemeProvider>
     );
 }

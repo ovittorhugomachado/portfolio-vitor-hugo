@@ -48,6 +48,7 @@ export const ContainerLogo = styled.div`
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
 `
 
 export const Logo = styled.img`
