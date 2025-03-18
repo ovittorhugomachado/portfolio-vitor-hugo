@@ -1,0 +1,51 @@
+{
+    "mainSkills": [
+        {
+            "name": "HTML",
+            "icon": "FaHtml5"
+        },
+        {
+            "name": "CSS",
+            "icon": "FaCss3Alt"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "RiJavascriptFill"
+        },
+        {
+            "name": "React",
+            "icon": "FaReact"
+        },
+        {
+            "name": "Figma",
+            "icon": "PiFigmaLogoLight"
+        },
+        {
+            "name": "Git",
+            "icon": "FaGitAlt"
+        }
+    ],
+    "secondarySkills": [
+        {
+            "name": "GitHub"
+        },
+        {
+            "name": "GitFlow"
+        },
+        {
+            "name": "Styled Components"
+        },
+        {
+            "name": "Context API"
+        },
+        {
+            "name": "Fetch API"
+        },
+        {
+            "name": "Axios"
+        },
+        {
+            "name": "React Hook Form"
+        }
+    ]
+}
