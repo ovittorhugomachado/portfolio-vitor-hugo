@@ -51,7 +51,7 @@ export const Style = createGlobalStyle`
     main {
         width: 100%;
         max-width: 1100px;
-        min-height: 100vh;
+        min-height: 520px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -61,6 +61,7 @@ export const Style = createGlobalStyle`
                 padding-top: 50px;
             }
             &.home {
+                justify-content: center;
                 flex-direction: column-reverse;
                     @media (min-width: ${MediaSizes.tablet}) {
                         flex-direction: row;
