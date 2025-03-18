@@ -15,7 +15,6 @@ const Skills = () => {
         FaGitAlt: FaGitAlt,
     };
 
-    console.log(skillsList)
     return (
         <main>
             <h1>Skills</h1>
@@ -45,11 +44,12 @@ const Skills = () => {
             <h5>Comunicação</h5>
             <p>Considero minha comunicação um ponto positivo, tanto pela clareza em tirar dúvidas ou na forma objetiva e didática de expressar minhas ideias.</p>
 
-            <h5>Honestidade</h5>
-            <p>Em qualquer área considero esse o principal valor, seja no momento de mostrar alguma insegurança ou de reconhecer um erro, sempre opto pela verdade, acho que esse é o melhor caminho para chegar próximo da excelêcia.</p>
-
             <h5>Aprendizado constante</h5>
             <p>Busco todos os dias aprender algo novo e me manter atualizado sobre as tendências de linguagens e bibliotecas, seja por vídeos, cursos ou fóruns de dúvidas.</p>
+
+            <h5>Honestidade</h5>
+            <p>Em qualquer área considero esse o principal valor, seja no momento de mostrar alguma insegurança ou de reconhecer um erro, sempre opto pela verdade, acho que esse é o melhor caminho para chegar próximo da excelêcia.</p>
+            
         </main>
     )
 
