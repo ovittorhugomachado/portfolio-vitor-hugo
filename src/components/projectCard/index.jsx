@@ -1,4 +1,12 @@
-import { Container, Image, ContainerInfo, Technologie, ContainerTechnologies, ContainerLinks, Link } from "./style"
+import {
+    Container,
+    Image,
+    ContainerInfo,
+    Technologie,
+    ContainerTechnologies,
+    ContainerLinks,
+    Link
+} from "./style"
 import { FaGithub } from "react-icons/fa";
 import { TfiWorld } from "react-icons/tfi";
 

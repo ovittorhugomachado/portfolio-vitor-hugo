@@ -5,11 +5,9 @@ import { Skills } from "../sections/skills";
 import { Projects } from "../sections/projects";
 import { Contact } from "../sections/contact";
 
-
-
 const Main = () => {
 
-    const {currentSection, setCurrentSection} = useContext(SectionContext)
+    const { currentSection } = useContext(SectionContext)
 
     const sections = [
         <Home />,

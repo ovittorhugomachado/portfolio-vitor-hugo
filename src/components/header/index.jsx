@@ -1,4 +1,9 @@
-import { Container, Menu, ContainerLogo, Logo } from "./style";
+import {
+    Container,
+    Menu,
+    ContainerLogo,
+    Logo
+} from "./style";
 import { useState, useContext } from "react";
 import { SectionContext } from "../../context/sectionContext.jsx";
 import { IoIosArrowForward } from "react-icons/io";
@@ -9,7 +14,7 @@ import { SocialMedia } from "../socialMedia";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const {setCurrentSection} = useContext(SectionContext)
+    const { setCurrentSection } = useContext(SectionContext)
 
     const toggleMenu = () => {
         setMenuOpen((prev) => !prev)

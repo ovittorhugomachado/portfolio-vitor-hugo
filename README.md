@@ -11,7 +11,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 - **JavaScript (ES6+)**: Interatividade e lógica.
 - **React.js**: Construção de componentes reutilizáveis.
 - **Vite**: Ferramenta para um desenvolvimento mais rápido e moderno.
-- **FontAwesome**: Ícones estilizados e dinâmicos.
+- **React Icons**: Ícones estilizados e dinâmicos.
 - **Git**: Controle de versão.
 - **GitHub**: Hospedagem e gerenciamento do código.
 

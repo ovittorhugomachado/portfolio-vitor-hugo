@@ -1,4 +1,7 @@
-import { ContainterBackground, Picture } from "./style";
+import {
+    ContainterBackground,
+    Picture
+} from "./style";
 
 const ProfilePicture = () => {
     return (
@@ -8,4 +11,4 @@ const ProfilePicture = () => {
     )
 }
 
-export  { ProfilePicture }
+export { ProfilePicture }

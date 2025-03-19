@@ -1,4 +1,8 @@
-import { Container, List, Item } from "./style";
+import {
+    Container,
+    List,
+    Item
+} from "./style";
 import { HiOutlineHome } from "react-icons/hi2";
 import { GoPerson } from "react-icons/go";
 import { IoDocumentOutline } from "react-icons/io5";

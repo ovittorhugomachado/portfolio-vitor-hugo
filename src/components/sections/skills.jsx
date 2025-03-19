@@ -49,11 +49,11 @@ const Skills = () => {
 
             <h5>Honestidade</h5>
             <p>Em qualquer área considero esse o principal valor, seja no momento de mostrar alguma insegurança ou de reconhecer um erro, sempre opto pela verdade, acho que esse é o melhor caminho para chegar próximo da excelêcia.</p>
-            
+
         </main>
     )
 
 
 }
-
+    
 export { Skills }
