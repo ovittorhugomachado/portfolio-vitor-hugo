@@ -92,7 +92,6 @@ export const Style = createGlobalStyle`
         font-size: 35px;
         text-align: start;
         color: var(--text);
-        border-bottom: 3px solid var(--secondary-color);
             @media (min-width: ${MediaSizes.tablet}) {
                 font-size: 43px;
             }
@@ -104,15 +103,18 @@ export const Style = createGlobalStyle`
         color: var(--text);
         text-align: start;
             @media (min-width: ${MediaSizes.tablet}) {
-                font-size: 33px;
+                font-size: 27px;
             }
     }
 
     h3 {
+        width: 70%;
         font-size: 20px;
         font-weight: 200;
         color: var(--text);
         text-align: start;
+        padding-top: 4px;
+        border-top: 3px solid var(--secondary-color);
             @media (min-width: ${MediaSizes.tablet}) {
                 font-size: 26px;
             }
@@ -138,7 +140,7 @@ export const Style = createGlobalStyle`
 
     h5 {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 500;
         color: var(--text);
         transition: 0.3s ease-in-out;
         overflow-wrap: normal;
@@ -163,7 +165,7 @@ export const Style = createGlobalStyle`
 
     h6 {
         color: var(--text);
-        font-weight: 800;
+        font-weight: 500;
         font-size: 16px;
         white-space: nowrap;
             &.technologie {
@@ -173,9 +175,14 @@ export const Style = createGlobalStyle`
     }
 
     P {
+        font-size: 16px;
         color: var(--text);
         padding: 7px 0;
         font-weight: 100;
+            &.large {
+                font-size: 20px;
+                text-align: start;
+            }
             &.nav {
                 font-size: 8px;
                 color: var(--text);
@@ -235,8 +242,8 @@ export const Style = createGlobalStyle`
             }
 
             &.nav-icon {
-                width: 18px;
-                height: 18px;
+                width: 23px;
+                height: 23px;
                     &.active {
                         color: var(--color-active);
                     }

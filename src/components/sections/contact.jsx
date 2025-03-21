@@ -3,7 +3,7 @@ const Contact = () => {
         <main className="contact">
             <div>
                 <h1>VITOR HUGO</h1>
-                <h2>FrontEnd</h2>
+                <h3>FrontEnd</h3>
                 <h6>vitorhugoalvesmachado@hotmail.com</h6>
                 <a
                     href="https://wa.me/+5551980560089"
