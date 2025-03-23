@@ -190,7 +190,7 @@ export const Style = createGlobalStyle`
                 padding: 0;
             }
             &.active {
-                color: var(--color-active)
+                color: var(--secondary-color)
             }
     }
 
@@ -245,7 +245,7 @@ export const Style = createGlobalStyle`
                 width: 23px;
                 height: 23px;
                     &.active {
-                        color: var(--color-active);
+                        color: var(--secondary-color);
                     }
                     @media (min-width: ${MediaSizes.desktop}) {
                         width: 25px;
