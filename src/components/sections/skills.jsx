@@ -25,7 +25,7 @@ const Skills = () => {
                         return (
                             <SkillCard
                                 key={index}
-                                icon={<IconComponent />}
+                                icon={<IconComponent className="skill" />}
                                 name={skill.name}
                             />
                         );

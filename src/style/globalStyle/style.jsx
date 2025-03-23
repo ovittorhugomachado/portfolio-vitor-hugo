@@ -62,11 +62,13 @@ export const Style = createGlobalStyle`
             }
             &.home {
                 justify-content: center;
-                flex-direction: column-reverse;
+                flex-direction: column;
                     @media (min-width: ${MediaSizes.tablet}) {
-                        flex-direction: row;
-                        justify-content: center;
+                        justify-content: space-around;
                         padding-left: 70px;
+                    }
+                    @media (min-width: ${MediaSizes.desktop}) {
+                        flex-direction: row;
                     }
             }
             &.contact {
@@ -143,7 +145,7 @@ export const Style = createGlobalStyle`
 
     h5 {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 200;
         color: var(--text);
         transition: 0.3s ease-in-out;
         overflow-wrap: normal;
@@ -156,7 +158,7 @@ export const Style = createGlobalStyle`
                     }
             }
             &.active {
-                color: var(--color-active)
+                color: var(--secondary-color)
             }
             &.skill {
                 padding: 7px 15px;
@@ -182,14 +184,22 @@ export const Style = createGlobalStyle`
         color: var(--text);
         padding: 7px 0;
         font-weight: 100;
+            &.home {
+                font-size: 19px;
+                line-height: 1.5;
+                padding: 30px 25px 0;
+                    @media (min-width: ${MediaSizes.desktop}) {
+                        max-width: 500px;
+                    }
+            }
             &.large {
                 font-size: 20px;
                 text-align: start;
             }
             &.nav {
-                font-size: 8px;
+                font-size: 11px;
                 color: var(--text);
-                font-weight: 500;
+                font-weight: 200;
                 padding: 0;
             }
             &.active {
@@ -203,6 +213,18 @@ export const Style = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
+            &.curriculo {
+                width: 270px;
+                padding: 10px;
+                color: var(--text);
+                border-radius: 20px;
+                border: 2px solid var(--text);
+                margin: 20px auto;
+                    &:hover {
+                        background-color: var(--text);
+                        color: var(--background)
+                    }
+            }
             &.phone-number {
                 color: var(--text);
                     &:hover {
@@ -245,8 +267,8 @@ export const Style = createGlobalStyle`
             }
 
             &.nav-icon {
-                width: 23px;
-                height: 23px;
+                width: 25px;
+                height: 25px;
                     &.active {
                         color: var(--secondary-color);
                     }
@@ -280,6 +302,11 @@ export const Style = createGlobalStyle`
                 height: 30px;
                 color: var(--primary-color);
                 width: 23px;
+            }
+            &.skill {
+                &:hover {
+                    color: var(--text);
+                }
             }
     }
 `;

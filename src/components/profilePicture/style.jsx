@@ -7,7 +7,7 @@ export const ContainterBackground = styled.div`
     border: 2px solid var(--text);
     border-radius: 10px;
     background-color: transparent;
-    margin: 30px 0;
+    margin: 30px auto;
         @media(min-width: ${MediaSizes.tablet}) {
             width: 250px;
             height: 150px;
