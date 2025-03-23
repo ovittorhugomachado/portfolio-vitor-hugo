@@ -7,7 +7,6 @@ import {
 import { useState, useContext } from "react";
 import { SectionContext } from "../../context/sectionContext.jsx";
 import { IoIosArrowForward } from "react-icons/io";
-import { ToggleThemeButton } from "../toggleThemeButton.jsx";
 import { Nav } from "../nav";
 import { SocialMedia } from "../socialMedia";
 
@@ -28,7 +27,6 @@ const Header = () => {
                 <ContainerLogo onClick={() => setCurrentSection(0)}>
                     <Logo src="/logo.png" alt="logo" />
                     <h4 className={`name ${menuClass}`}>VITOR HUGO</h4>
-                    <ToggleThemeButton className='nav-icon' deviceType='desktop' />
                 </ContainerLogo>
                 <Nav
                     className={menuClass}

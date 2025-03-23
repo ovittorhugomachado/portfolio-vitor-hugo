@@ -1,4 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { SectionContext } from './sectionContext';
 
 export const themes = {
     light: {
@@ -22,6 +24,8 @@ export const themes = {
 export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
+
+    const { currentSection, setCurrentSection } = useContext(SectionContext)
 
     const [theme, setTheme] = useState(() => {
         const savedTheme = localStorage.getItem('theme');

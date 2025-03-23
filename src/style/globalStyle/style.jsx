@@ -236,6 +236,10 @@ export const Style = createGlobalStyle`
             }
     }
 
+    img {
+        user-select: none;
+    }
+
     svg {
         width: 60px;
         height: 60px;

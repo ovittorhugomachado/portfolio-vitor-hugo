@@ -8,14 +8,14 @@ import { Main } from './components/main/index.jsx';
 function App() {
 
     return (
-        <ThemeProvider>
-            <SectionProvider>
+        <SectionProvider>
+            <ThemeProvider>
                 <GlobalStyle />
                 <Header />
                 <Main />
                 <Nav deviceType={'mobile'} />
-            </SectionProvider>
-        </ThemeProvider>
+            </ThemeProvider>
+        </SectionProvider>
     );
 }
 

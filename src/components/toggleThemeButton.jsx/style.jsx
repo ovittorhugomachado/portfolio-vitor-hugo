@@ -15,20 +15,14 @@ export const Container = styled.div`
     right: -1px;
     margin: 0 3px;
     cursor: pointer;
-        &.desktop {
-            display: none;
-        }   
         @media (min-width: ${MediaSizes.desktop}) {
-            display: none;
-            &.desktop {
-                transform: scale(1);               
+            transform: scale(1);               
                 width: 32px;
                 height: 63px;
                 display: flex;
                 flex-direction: column;
-                right: -52px;
-                top: -10px;
-            }
+                right: -40px;
+                top: 5px;
         }
 `
 
