@@ -18,7 +18,7 @@
         "image": "/projects/pokeDex.png",
         "description": "Projeto onde são listados todos os pokemons, assim como o tipo, habilidade e movimentos de cada um deles, os dados são consumidos através da API do PokéApi",
         "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
-        "linkPage": "",
+        "linkPage": "https://pokedexapi-4lxk.onrender.com",
         "technologies": [
             "HTML",
             "CSS",
