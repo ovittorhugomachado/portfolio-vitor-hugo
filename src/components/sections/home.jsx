@@ -6,7 +6,7 @@ const Home = () => {
                 <div>
                     <h1>VITOR HUGO</h1>
                     <h3>DEV</h3>
-                    <h2>FrontEnd</h2>
+                    <h2 className="home">FrontEnd</h2>
                     <p className="large">HTML | CSS | JavaScript | React</p>
                 </div>
                 <ProfilePicture />

@@ -101,7 +101,10 @@ export const Style = createGlobalStyle`
         font-size: 30px;
         font-weight: 500;
         color: var(--text);
-        text-align: start;
+        text-align: center;
+            &.home {
+                text-align: start;
+            }
             @media (min-width: ${MediaSizes.tablet}) {
                 font-size: 27px;
             }

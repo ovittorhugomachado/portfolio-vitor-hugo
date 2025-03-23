@@ -2,7 +2,7 @@
     {
         "name": "Wiki Movie",
         "image": "/projects/wikiMovie.png",
-        "description": "Página que conta com informações sobre filmes, filtros por gênero e busca por nome. As informaçãoes são buscadas da API TDBM (The Data Base Movie)",
+        "description": "Plataforma interativa para explorar informações detalhadas sobre filmes. O projeto permite buscar títulos pelo nome, filtrar por gênero e acessar dados completos, como sinopse, elenco e avaliação. As informações são obtidas em tempo real através da API The Movie Database (TMDB).",
         "linkGitHub": "https://github.com/ovittorhugomachado/wikimovie/tree/main",
         "linkPage": "https://wikimovie.onrender.com/",
         "technologies": [
@@ -16,7 +16,7 @@
     {
         "name": "PokeDex",
         "image": "/projects/pokeDex.png",
-        "description": "Projeto onde são listados todos os pokemons, assim como o tipo, habilidade e movimentos de cada um deles, os dados são consumidos através da API do PokéApi",
+        "description":"Aplicação que exibe uma lista completa de Pokémon, incluindo detalhes como tipo, habilidades e movimentos. Os dados são extraídos da API PokéAPI, permitindo uma navegação intuitiva e uma experiência visualmente atraente.",
         "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
         "linkPage": "https://pokedexapi-4lxk.onrender.com",
         "technologies": [
@@ -30,7 +30,7 @@
     {
         "name": "Portfólio Vitor Hugo",
         "image": "/projects/gitHubApi.png",
-        "description": "Página onde ficam exibidos alguns projetos que já realizei e também informações de contato",
+        "description": "Página pessoal desenvolvida para apresentar meus projetos e experiências na área de desenvolvimento. Além da listagem de trabalhos, inclui informações de contato e links para redes profissionais, destacando minhas habilidades como desenvolvedor.",
         "linkGitHub": "https://github.com/ovittorhugomachado/portfolio-vitor-hugo/tree/main",
         "linkPage": "https://portfolio-vitor-hugo.onrender.com/",
         "technologies": [
@@ -43,7 +43,7 @@
     {
         "name": "Formulário multietapas",
         "image": "/projects/multistepForm.png",
-        "description": "Essa página é a resolução de um desfio da plataforma FrontEnd Mentor onde o objetivo foi criar um formulário de quatro etapas usando ReactJS, em que as informações digitadas são formatadas no formato desejado através de máscaras e após isso são validadas",
+        "description": "Projeto desenvolvido como parte de um desafio da plataforma Frontend Mentor. O objetivo foi criar um formulário de quatro etapas utilizando ReactJS, com validação dinâmica dos campos e máscaras para formatação automática das informações inseridas pelo usuário.",
         "linkGitHub": "https://github.com/ovittorhugomachado/formulario-multietapas",
         "linkPage": "https://formulariomultietapas.onrender.com/",
         "technologies": [
@@ -56,7 +56,7 @@
     {
         "name": "User GitHub",
         "image": "/projects/gitHubApi.png",
-        "description": "Página que busca dados de usuários da plataforma GitHub, como número de seguidores e eventos. Os dados são retornados através do uso da API do GitHub",
+        "description": "Ferramenta que permite pesquisar perfis de usuários no GitHub, exibindo informações como número de seguidores, repositórios públicos e eventos recentes. Os dados são consumidos via GitHub API, proporcionando uma interface prática e objetiva para acompanhar atividades na plataforma.",
         "linkGitHub": "https://github.com/ovittorhugomachado/fetch-github-api.git",
         "linkPage": "https://fetch-github-api-b5ib.onrender.com/",
         "technologies": [
