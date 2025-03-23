@@ -12,7 +12,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 
 - **JavaScript**: Interatividade e lógica.
   
-- **React**: Criação de globla style e construção de componentes estilizados e reutilizáveis.
+- **React**: Criação de estilo global e construção de componentes estilizados e reutilizáveis.
   
 - **Vite**: Ferramenta de build para um desenvolvimento mais rápido e moderno.
   
