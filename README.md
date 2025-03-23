@@ -18,7 +18,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
   
 - **ESLint**: Pré-instalado com o Vite, usado para definir regras e deixar o código mais conciso.
 
-## 🎨 Funcionalidades
+## ⚙️ Funcionalidades
 
 - **Design Responsivo**: Adaptado para diferentes tamanhos de tela, de dispositivos móveis a desktops.
   
