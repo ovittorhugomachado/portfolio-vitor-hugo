@@ -1,7 +1,7 @@
 [
     {
         "name": "Wiki Movie",
-        "image": "/projects/wikiMovie.png",
+        "image": "/projects/wiki-movie.png",
         "description": "Plataforma interativa para explorar informações detalhadas sobre filmes. O projeto permite buscar títulos pelo nome, filtrar por gênero e acessar dados completos, como sinopse, elenco e avaliação. As informações são obtidas em tempo real através da API The Movie Database (TMDB).",
         "linkGitHub": "https://github.com/ovittorhugomachado/wikimovie/tree/main",
         "linkPage": "https://wikimovie.onrender.com/",
@@ -15,7 +15,7 @@
     },
     {
         "name": "PokeDex",
-        "image": "/projects/pokeDex.png",
+        "image": "/projects/pokedex.png",
         "description":"Aplicação que exibe uma lista completa de Pokémon, incluindo detalhes como tipo, habilidades e movimentos. Os dados são extraídos da API PokéAPI, permitindo uma navegação intuitiva e uma experiência visualmente atraente.",
         "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
         "linkPage": "https://pokedexapi-4lxk.onrender.com",
@@ -29,7 +29,7 @@
     },
     {
         "name": "Portfólio Vitor Hugo",
-        "image": "/projects/gitHubApi.png",
+        "image": "/projects/portfolio.png",
         "description": "Página pessoal desenvolvida para apresentar meus projetos e experiências na área de desenvolvimento. Além da listagem de trabalhos, inclui informações de contato e links para redes profissionais, destacando minhas habilidades como desenvolvedor.",
         "linkGitHub": "https://github.com/ovittorhugomachado/portfolio-vitor-hugo/tree/main",
         "linkPage": "https://portfolio-vitor-hugo.onrender.com/",
@@ -42,7 +42,7 @@
     },
     {
         "name": "Formulário multietapas",
-        "image": "/projects/multistepForm.png",
+        "image": "/projects/multistep-form.png",
         "description": "Projeto desenvolvido como parte de um desafio da plataforma Frontend Mentor. O objetivo foi criar um formulário de quatro etapas utilizando ReactJS, com validação dinâmica dos campos e máscaras para formatação automática das informações inseridas pelo usuário.",
         "linkGitHub": "https://github.com/ovittorhugomachado/formulario-multietapas",
         "linkPage": "https://formulariomultietapas.onrender.com/",
@@ -55,7 +55,7 @@
     },
     {
         "name": "User GitHub",
-        "image": "/projects/gitHubApi.png",
+        "image": "/projects/github-api.png",
         "description": "Ferramenta que permite pesquisar perfis de usuários no GitHub, exibindo informações como número de seguidores, repositórios públicos e eventos recentes. Os dados são consumidos via GitHub API, proporcionando uma interface prática e objetiva para acompanhar atividades na plataforma.",
         "linkGitHub": "https://github.com/ovittorhugomachado/fetch-github-api.git",
         "linkPage": "https://fetch-github-api-b5ib.onrender.com/",

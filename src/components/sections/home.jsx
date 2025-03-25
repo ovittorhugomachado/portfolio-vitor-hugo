@@ -1,22 +1,22 @@
 import { ProfilePicture } from "../profilePicture"
+import curriculo from "../../../pdf/curriculo-vitor-hugo.pdf"
+import { MdFileDownload } from "react-icons/md";
 
 const Home = () => {
     return (
-            <main className="home">
+        <main className="home">
+                <ProfilePicture />
                 <div>
-                    <ProfilePicture />  
                     <h1>VITOR HUGO</h1>
                     <h3>DEV</h3>
                     <h2 className="home">FrontEnd</h2>
                     <p className="large">HTML | CSS | JavaScript | React</p>
+                    <div className="cv-button">
+                        <a className="cv" href={curriculo} target="_blank">Visualizar currículo</a>
+                        <a className="download-cv" href={curriculo} download><MdFileDownload className="download" /></a>
+                    </div>
                 </div>
-                <div>
-                    <p className="home">Bem-vindo(a) ao meu portfólio! Aqui é o espaço onde apresento meus projetos, habilidades e contato profissional. 
-                    Este portfólio foi desenvolvido para registrar meu aprendizado, destacar minha experiência como desenvolvedor e compartilhar os trabalhos que tenho orgulho de criar.</p>
-                    <a className="curriculo" href="#" target="_blank">Baixar currículo em pdf</a>
-                </div>
-                
-            </main>
+        </main>
     )
 }
 

@@ -62,10 +62,9 @@ export const Style = createGlobalStyle`
             }
             &.home {
                 justify-content: center;
-                flex-direction: column;
+                align-items: center;
+                gap: 40px;
                     @media (min-width: ${MediaSizes.tablet}) {
-                        justify-content: space-around;
-                        padding-left: 70px;
                     }
                     @media (min-width: ${MediaSizes.desktop}) {
                         flex-direction: row;
@@ -77,6 +76,18 @@ export const Style = createGlobalStyle`
     }
 
     div {
+            &.picture-and-name {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            &.cv-button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 20px;
+            }
             &.container-skills {
                 max-width: 1000px;
                 margin-top: 30px;
@@ -166,6 +177,10 @@ export const Style = createGlobalStyle`
                 background-color: var(--primary-color);
                 margin-top: 0;
             }
+            &.title {
+                font-size: 19px;
+                font-weight: 500;
+            }
     }
 
     h6 {
@@ -174,9 +189,16 @@ export const Style = createGlobalStyle`
         font-size: 16px;
         white-space: nowrap;
             &.technologie {
-                background-color: var(--background)
+                background-color: var(--background);
             }
-
+            &.email {
+                font-size: 15px;
+                font-weight: 200;
+                margin: 5px 0;
+                    @media (min-width: ${MediaSizes.mobileLarge}) {
+                        font-size: 18px;
+                    }
+            }
     }
 
     P {
@@ -195,6 +217,7 @@ export const Style = createGlobalStyle`
             &.large {
                 font-size: 20px;
                 text-align: start;
+                padding: 0;
             }
             &.nav {
                 font-size: 11px;
@@ -213,22 +236,37 @@ export const Style = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
-            &.curriculo {
-                width: 270px;
+        justify-content: center;
+            &.cv {
                 padding: 10px;
                 color: var(--text);
                 border-radius: 20px;
                 border: 2px solid var(--text);
-                margin: 20px auto;
+                    &:hover {
+                        background-color: var(--text);
+                        color: var(--background)
+                    }
+            }
+            &.download-cv {
+            border-radius: 50px;
+                border: 2px solid var(--text);
                     &:hover {
                         background-color: var(--text);
                         color: var(--background)
                     }
             }
             &.phone-number {
+                width: 192px;
+                padding: 5px;
                 color: var(--text);
+                align-items: start;
+                flex-direction: row;
+                justify-content: start;
+                gap: 8px;
                     &:hover {
-                        color: var(--text);
+                        color: var(--background);
+                        background-color: var(--text);
+                        border-radius: 7px;
                     }  
             }
             &:hover {
@@ -245,6 +283,22 @@ export const Style = createGlobalStyle`
         height: 60px;
         color: var(--text);
         transition: 0.4s ease-in-out;
+            &.download {
+                height: 40px;
+                width: 40px;
+                border-radius: 20px;
+                padding: 7px;
+                    &:hover {
+                        color: var(--background)
+                    }
+            }
+            &.whatsapp {
+                width: 20px;
+                height: 20px;
+                    &:hover {
+                        color: var(--background-color)
+                    }
+            }
             @media (min-width: ${MediaSizes.desktop}) {
                 &:hover {
                     color: var(--secondary-color);
@@ -269,10 +323,9 @@ export const Style = createGlobalStyle`
                             }                    
                     }
             }
-
             &.nav-icon {
-                width: 25px;
-                height: 25px;
+                width: 23px;
+                height: 23px;
                     &.active {
                         color: var(--secondary-color);
                     }

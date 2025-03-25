@@ -36,24 +36,23 @@ const Skills = () => {
                         <h5 key={index} className="skill">{skill.name}</h5>
                     ))
                     }
-
                 </div>
             </div>
             <br /><br />
             <h1>Soft Skills</h1>
-            <h5>Comunicação</h5>
-            <p>Considero minha comunicação um ponto positivo, tanto pela clareza em tirar dúvidas ou na forma objetiva e didática de expressar minhas ideias.</p>
+            <h5 className="title">Aprendizado constante</h5>
+            <p>Tenho uma grande curiosidade em entender como as tecnologias funcionam e como posso aplicá-las da melhor forma. Por isso, busco todos os dias aprender algo novo e me manter atualizado sobre as tendências de linguagens e bibliotecas. Acredito que esse hábito me ajuda a evoluir e a estar pronto para novos desafios</p>
 
-            <h5>Aprendizado constante</h5>
-            <p>Busco todos os dias aprender algo novo e me manter atualizado sobre as tendências de linguagens e bibliotecas, seja por vídeos, cursos ou fóruns de dúvidas.</p>
+            <h5 className="title">Trabalho em equipe</h5>
+            <p>Tenho facilidade para trabalhar com outras pessoas e sou aberto a diferentes pontos de vista. Sei que a troca de conhecimento e uma comunicação clara são fundamentais para o sucesso de um projeto.</p>
 
-            <h5>Honestidade</h5>
-            <p>Em qualquer área considero esse o principal valor, seja no momento de mostrar alguma insegurança ou de reconhecer um erro, sempre opto pela verdade, acho que esse é o melhor caminho para chegar próximo da excelêcia.</p>
+            <h5 className="title">Honestidade</h5>
+            <p>Acredito que transparência e sinceridade são fundamentais em qualquer ambiente profissional. Sempre prefiro admitir quando não sei algo ou quando cometo um erro, pois vejo nisso uma oportunidade de aprendizado e melhoria. Para mim, a verdade é o caminho mais eficiente para a excelência.</p>
 
+            <h5 className="title">Comprometimento</h5>
+            <p>Sou responsável e focado em entregar o melhor resultado possível. Mesmo no início da carreira, me esforço para garantir um código limpo e de qualidade, focando na em uma base sólida com as linguagens que trabalho.</p>
         </main>
     )
-
-
 }
-    
+
 export { Skills }

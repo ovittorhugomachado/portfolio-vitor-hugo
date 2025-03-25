@@ -6,7 +6,7 @@ import {
 const ProfilePicture = () => {
     return (
         <ContainterBackground>
-            <Picture src="Mask.jpg" />
+            <Picture src="profile-picture.jpg" />
         </ContainterBackground>
     )
 }

@@ -2,16 +2,14 @@ import styled from "styled-components";
 import { MediaSizes } from "../../style/mediaSizes";
 
 export const ContainterBackground = styled.div`
-    width: 200px;
-    height: 120px;
+    width: 170px;
+    height: 220px;
     border: 2px solid var(--text);
     border-radius: 10px;
     background-color: transparent;
-    margin: 30px auto;
         @media(min-width: ${MediaSizes.tablet}) {
-            width: 250px;
-            height: 150px;
-            margin-left: 35px;
+            width: 195px;
+            height: 250px;
         }
 `
 
