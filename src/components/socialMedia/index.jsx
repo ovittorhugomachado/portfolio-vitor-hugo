@@ -14,7 +14,7 @@ function SocialMedia({ menuOpen }) {
             </Item>
             <Item
                 className='icon-social-media'
-                href="https://www.linkedin.com/in/vitor-hugo-alves-machado-1621bb156/"
+                href="https://www.linkedin.com/in/vitor-hugo-machado-1621bb156/"
                 target='_blank'
             >
                 <FaLinkedin className="social-media" />
