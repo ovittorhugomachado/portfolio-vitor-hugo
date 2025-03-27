@@ -191,14 +191,6 @@ export const Style = createGlobalStyle`
             &.technologie {
                 background-color: var(--background);
             }
-            &.email {
-                font-size: 15px;
-                font-weight: 200;
-                margin: 5px 0;
-                    @media (min-width: ${MediaSizes.mobileLarge}) {
-                        font-size: 18px;
-                    }
-            }
     }
 
     P {
@@ -255,18 +247,28 @@ export const Style = createGlobalStyle`
                         color: var(--background)
                     }
             }
-            &.phone-number {
-                width: 192px;
+            &.email {
+                font-size: 12px;
                 padding: 5px;
                 color: var(--text);
-                align-items: start;
-                flex-direction: row;
-                justify-content: start;
-                gap: 8px;
+                border-radius: 7px;
+                    @media (min-width: ${MediaSizes.mobileLarge}) {
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
                     &:hover {
                         color: var(--background);
                         background-color: var(--text);
-                        border-radius: 7px;
+                    }  
+            }
+            &.phone-number {
+                width: 160px;
+                padding: 5px;
+                color: var(--text);
+                border-radius: 7px;
+                    &:hover {
+                        color: var(--background);
+                        background-color: var(--text);
                     }  
             }
             &:hover {
@@ -290,13 +292,6 @@ export const Style = createGlobalStyle`
                 padding: 7px;
                     &:hover {
                         color: var(--background)
-                    }
-            }
-            &.whatsapp {
-                width: 20px;
-                height: 20px;
-                    &:hover {
-                        color: var(--background-color)
                     }
             }
             @media (min-width: ${MediaSizes.desktop}) {
