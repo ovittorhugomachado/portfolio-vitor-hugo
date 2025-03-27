@@ -15,7 +15,7 @@
     },
     {
         "name": "PokeDex",
-        "image": "/projects/pokedex.png",
+        "image": "/projects/pokeDex.png",
         "description":"Aplicação que exibe uma lista completa de Pokémon, incluindo detalhes como tipo, habilidades e movimentos. Os dados são extraídos da API PokéAPI, permitindo uma navegação intuitiva e uma experiência visualmente atraente.",
         "linkGitHub": "https://github.com/ovittorhugomachado/pokedex/tree/main",
         "linkPage": "https://pokedexapi-4lxk.onrender.com",
