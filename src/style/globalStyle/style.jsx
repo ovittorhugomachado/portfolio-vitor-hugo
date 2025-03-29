@@ -233,7 +233,7 @@ export const Style = createGlobalStyle`
                 padding: 10px;
                 color: var(--text);
                 border-radius: 20px;
-                border: 2px solid var(--text);
+                border: 1px solid var(--text);
                     &:hover {
                         background-color: var(--text);
                         color: var(--background)
@@ -241,7 +241,7 @@ export const Style = createGlobalStyle`
             }
             &.download-cv {
             border-radius: 50px;
-                border: 2px solid var(--text);
+                border: 1px solid var(--text);
                     &:hover {
                         background-color: var(--text);
                         color: var(--background)

@@ -4,7 +4,7 @@ import { MediaSizes } from "../../style/mediaSizes";
 export const ContainterBackground = styled.div`
     width: 210px;
     height: 230px;
-    border: 2px solid var(--text);
+    border: 1px solid var(--text);
     border-radius: 10px;
     background-color: transparent;
         @media(min-width: ${MediaSizes.tablet}) {
