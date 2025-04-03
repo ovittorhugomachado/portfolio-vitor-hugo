@@ -34,12 +34,10 @@ export const Menu = styled.header`
             position: fixed;
             top: 0;
             left: 0;
-            height: 97.5vh;
+            height: 100vh;
             width: 65px;
             flex-direction: column;
-            border-radius: 7px;
             padding: 15px 20px 40px;
-            margin: 9px;
                 &.menu-active {
                     width: 240px;
                 }
