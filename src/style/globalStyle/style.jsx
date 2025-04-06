@@ -230,14 +230,20 @@ export const Style = createGlobalStyle`
         align-items: center;
         justify-content: center;
             &.cv {
-                padding: 10px;
+                font-size: 13px;
+                padding: 8px 20px;
                 color: var(--text);
                 border-radius: 20px;
                 border: 1px solid var(--text);
                     &:hover {
                         background-color: var(--text);
                         color: var(--background)
+                    };
+                    @media(min-width: ${MediaSizes.tablet}) {
+                        padding: 10px;
+                        font-size: 16px;
                     }
+
             }
             &.download-cv {
             border-radius: 50px;
@@ -286,12 +292,16 @@ export const Style = createGlobalStyle`
         color: var(--text);
         transition: 0.4s ease-in-out;
             &.download {
-                height: 40px;
-                width: 40px;
+                height: 30px;
+                width: 30px;
                 border-radius: 20px;
                 padding: 7px;
                     &:hover {
                         color: var(--background)
+                    }
+                    @media(min-width: ${MediaSizes.tablet}) {
+                        height: 40px;
+                        width: 40px; 
                     }
             }
             @media (min-width: ${MediaSizes.desktop}) {
