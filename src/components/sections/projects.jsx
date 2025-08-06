@@ -14,6 +14,7 @@ const Projects = () => {
                     text={project.description}
                     technologies={project.technologies}
                     linkCode={project.linkGitHub}
+                    linkCode2={project.linkGitHub2}
                     linkPage={project.linkPage}
                 />
             ))

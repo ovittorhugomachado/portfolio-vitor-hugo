@@ -50,11 +50,10 @@ export const Technologie = styled.h6`
 
 export const ContainerLinks = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
     gap: 10px;
-        @media(min-width: ${MediaSizes.mobileLarge}) {
-            flex-direction: row;
-        }
 `
 
 export const Link = styled.a`

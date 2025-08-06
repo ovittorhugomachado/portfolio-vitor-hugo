@@ -10,7 +10,7 @@ import {
 import { FaGithub } from "react-icons/fa";
 import { TfiWorld } from "react-icons/tfi";
 
-const ProjectCard = ({ image, title, text, technologies, linkCode, linkPage }) => {
+const ProjectCard = ({ image, title, text, technologies, linkCode, linkCode2, linkPage }) => {
 
     return (
         <Container>
@@ -25,6 +25,9 @@ const ProjectCard = ({ image, title, text, technologies, linkCode, linkPage }) =
                 </ContainerTechnologies>
                 <ContainerLinks>
                     <Link href={linkCode} target="_blank"><FaGithub className="link" />Código</Link>
+                    {linkCode2 && (
+                        <Link href={linkCode2} target="_blank"><FaGithub className="link" />Código back-end</Link>
+                    )}
                     <Link href={linkPage} target="_blank"><TfiWorld className="link" />Página</Link>
                 </ContainerLinks>
             </ContainerInfo>
