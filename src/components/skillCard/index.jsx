@@ -5,7 +5,7 @@ const SkillCard = ({ icon, name }) => {
     return (
         <Skill>
             {icon}
-            <h5>{name}</h5>
+            <h6>{name}</h6>
         </Skill>
     )
 }

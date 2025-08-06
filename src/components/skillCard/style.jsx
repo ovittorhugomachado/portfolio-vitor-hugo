@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Skill = styled.div`
-    width: 140px;
-    height: 140px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 7px;
-    padding: 20px;
+    border-radius: 30px;
+    padding: 0 40px;
     background-color: var(--primary-color);
 `
-

@@ -9,6 +9,7 @@
         "technologies": [
             "Typescript",
             "React",
+            "Tailwind CSS",
             "Node.js",
             "PostgreSQL",
             "Prisma"

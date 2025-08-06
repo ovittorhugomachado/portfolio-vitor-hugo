@@ -99,6 +99,26 @@ export const Style = createGlobalStyle`
                 gap: 20px;
                 margin: 20px; 
             }
+            &.home {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 80px;
+                gap: 20px;
+                    @media (min-width: ${MediaSizes.tablet}) {
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+            }
+            &.home-text {
+                max-width: 900px;
+                text-align: start;
+                margin-top: 40px;
+                padding: 20px;
+                    @media (min-width: ${MediaSizes.tablet}) {
+                        padding: 0 50px;
+                    }
+            }
     }
 
     h1 {
@@ -180,6 +200,16 @@ export const Style = createGlobalStyle`
             &.title {
                 font-size: 19px;
                 font-weight: 500;
+            }
+            &.skill-category {
+                display: flex;
+                align-items: center;
+                font-size: 23px;
+                font-weight: 500;
+                border-right: 3px solid var(--secondary-color);
+                color: var(--text);
+                margin-top: 0;
+                padding-right: 20px;
             }
     }
 
@@ -287,8 +317,8 @@ export const Style = createGlobalStyle`
     }
 
     svg {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 45px;
         color: var(--text);
         transition: 0.4s ease-in-out;
             &.download {

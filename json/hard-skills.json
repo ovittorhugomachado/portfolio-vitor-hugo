@@ -1,5 +1,5 @@
 {
-    "mainSkills": [
+    "frontEndSkills": [
         {
             "name": "HTML",
             "icon": "FaHtml5"
@@ -13,39 +13,58 @@
             "icon": "RiJavascriptFill"
         },
         {
+            "name": "TypeScript",
+            "icon": "BiLogoTypescript"
+        },
+        {
             "name": "React",
             "icon": "FaReact"
         },
         {
-            "name": "Figma",
-            "icon": "PiFigmaLogoLight"
+            "name": "Tailwind CSS",
+            "icon": "RiTailwindCssFill"
+        },
+        {
+            "name": "Styled Components",
+            "icon": "SiStyledcomponents"
+        },
+        {
+            "name": "React Hook Form",
+            "icon": "SiReacthookform"
+        }
+    ],
+    "backEndSkills": [
+        {
+            "name": "Node.js",
+            "icon": "FaNodeJs"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "BiLogoPostgresql"
+        },
+        {
+            "name": "Prisma",
+            "icon": "SiPrisma"
+        },
+        {
+            "name": "Docker",
+            "icon": "FaDocker"
+        },
+        {
+            "name": "Swagger",
+            "icon": "SiSwagger"
         },
         {
             "name": "Git",
             "icon": "FaGitAlt"
-        }
-    ],
-    "secondarySkills": [
-        {
-            "name": "GitHub"
         },
         {
-            "name": "GitFlow"
+            "name": "Fetch API",
+            "icon": "TbApi"
         },
         {
-            "name": "Styled Components"
-        },
-        {
-            "name": "Context API"
-        },
-        {
-            "name": "Fetch API"
-        },
-        {
-            "name": "Axios"
-        },
-        {
-            "name": "React Hook Form"
+            "name": "GitHub",
+            "icon": "FaGithub"
         }
     ]
 }
