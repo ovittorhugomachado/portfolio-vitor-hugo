@@ -15,7 +15,6 @@ export const Container = styled.nav`
                 }
         }
         &.desktop {
-
             display: none;
             @media (min-width: ${MediaSizes.desktop}) {
                 display: flex;

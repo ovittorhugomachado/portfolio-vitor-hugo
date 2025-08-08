@@ -100,6 +100,7 @@ export const Style = createGlobalStyle`
                 margin: 20px; 
             }
             &.home {
+                max-width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -109,6 +110,9 @@ export const Style = createGlobalStyle`
                         flex-direction: row;
                         justify-content: center;
                     }
+            }
+            &.home-info {
+                max-width: 105%;
             }
             &.home-text {
                 max-width: 900px;
@@ -249,6 +253,11 @@ export const Style = createGlobalStyle`
             }
             &.active {
                 color: var(--secondary-color)
+            }
+            &.p-home {
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
     }
 

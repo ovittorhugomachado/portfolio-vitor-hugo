@@ -11,7 +11,7 @@ import { Nav } from "../nav";
 import { SocialMedia } from "../socialMedia";
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(true);
 
     const { setCurrentSection } = useContext(SectionContext)
 

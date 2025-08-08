@@ -1,17 +1,25 @@
 import { ProfilePicture } from "../profilePicture"
 import curriculo from "../../../pdf/curriculo-vitor-hugo.pdf"
 import { MdFileDownload } from "react-icons/md";
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import { TbApi } from "react-icons/tb";
+import { PiFigmaLogoLight } from "react-icons/pi";
+import { FaNodeJs, FaDocker } from "react-icons/fa6";
+import { SiPrisma, SiSwagger, SiStyledcomponents, SiReacthookform } from "react-icons/si";
+
 
 const Home = () => {
     return (
         <main>
             <div className="home">
                 <ProfilePicture />
-                <div>
+                <div className="home-info">
                     <h1>VITOR HUGO</h1>
                     <h3>DEV</h3>
                     <h2 className="home">Full Stack</h2>
-                    <p className="large">TypeScript | React | Node.Js | PostgreSQL</p>
+                    <p className="large p-home"><BiLogoTypescript /> | <FaReact /> | <RiTailwindCssFill /> | <FaNodeJs /> | <BiLogoPostgresql /> | <SiPrisma /> | <FaDocker/> </p>
                     <div className="cv-button">
                         <a className="cv" href={curriculo} target="_blank">Visualizar currículo</a>
                         <a className="download-cv" href={curriculo} download><MdFileDownload className="download" /></a>

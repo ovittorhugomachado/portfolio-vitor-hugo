@@ -7,7 +7,7 @@ export const Container = styled.div`
     margin-top: 30px;
     padding: 40px 20px;
     max-width: 800px;
-        @media(min-width: ${MediaSizes.desktop}) {
+        @media(min-width: ${MediaSizes.desktopLarge}) {
             max-width: 1000px;
             display: flex;
             flex-direction: row;
