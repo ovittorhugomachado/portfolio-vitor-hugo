@@ -5,7 +5,7 @@
         "description": "Sistema de cardápios online, desenvolvido para permitir que pequenos restaurantes possam criar uma loja virtual, com identidade visual própria e gestão de pedidos através de um painel.",
         "linkGitHub": "https://github.com/ovittorhugomachado/rangos.git",
         "linkGitHub2": "https://github.com/ovittorhugomachado/rangos-server.git",
-        "linkPage": "https://rangos.onrender.com/restaurantes",
+        "linkPage": "https://rangos-app-production.up.railway.app/restaurantes",
         "technologies": [
             "Typescript",
             "React",
