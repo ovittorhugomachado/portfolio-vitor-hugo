@@ -1,5 +1,19 @@
 [
     {
+        "name": "Villa Glow",
+        "image": "/projects/villa-glow.png",
+        "description": "Landing Page do evento natalino do shopping Villa Lobos, que proporciona experiência de pinturas neon para famílias.",
+        "linkGitHub": "https://github.com/ovittorhugomachado/lp-villa-glow",
+        "linkPage": "https://www.villaglow.com.br/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React",
+            "API"
+        ]
+    },
+    {
         "name": "Wiki Movie",
         "image": "/projects/wiki-movie.png",
         "description": "Plataforma interativa para explorar informações detalhadas sobre filmes. O projeto permite buscar títulos pelo nome, filtrar por gênero e acessar dados completos, como sinopse, elenco e avaliação. As informações são obtidas em tempo real através da API The Movie Database (TMDB).",
